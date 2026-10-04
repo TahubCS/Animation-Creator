@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Noria — Milestone 1A review</title>
+<style>
+body{margin:0;background:#18212a;color:#edf0f3;font:16px/1.55 system-ui,sans-serif}
+main{max-width:1040px;margin:0 auto;padding:24px;display:flex;gap:30px;align-items:flex-start}
+video{display:block;width:min(45vw,420px);max-height:88vh;object-fit:contain;background:#35424c;border-radius:8px}
+section{flex:1}h1{font-size:26px;line-height:1.2}p{color:#b9c5ce}a{color:#86d0d5}
+button{font:inherit;padding:8px 12px;margin:4px;background:#34444f;color:white;border:1px solid #637781;border-radius:5px;cursor:pointer}
+output{display:block;font-variant-numeric:tabular-nums;margin:14px 4px;color:#91d4d8}
+input[type=range]{width:100%;accent-color:#91d4d8}
+img{width:100%;margin-top:18px}label{display:block;margin-top:18px}
+@media(max-width:700px){main{display:block}video{width:100%;max-height:75vh;margin:auto}}
+</style>
+<main>
+<video id="motion" controls preload="metadata" playsinline poster="renders/frames/frame_0001.png">
+  <source src="renders/preview_joint_fix.mp4" type="video/mp4">
+</video>
+<section>
+<h1>Wheel & container motion</h1>
+<p>Milestone 1A · 6 seconds · 24 fps · 1080 × 1920 · silent</p>
+<p>A dry geometry test. The teal bindings mark tube 01: follow it as the right
+side rises. All containers rotate with the rim; none pivot independently.</p>
+<button id="previous">Previous frame</button><button id="next">Next frame</button>
+<button id="restart">Restart</button>
+<label><input id="repeat" type="checkbox"> Loop playback</label>
+<output id="position">Frame 001 / 144</output>
+<input id="scrub" type="range" min="1" max="144" step="1" value="1" aria-label="Review frame">
+<p>The source, editable scene, and all original PNG frames are saved locally.
+Collection, retention, discharge, river drive, and a dated historical
+reconstruction remain unverified.</p>
+<p><a href="renders/preview_joint_fix.mp4">Open corrected video</a> · <a href="scene.blend">Editable scene</a> ·
+<a href="verification.md">Verification record</a> · <a href="build_scene.py">Source</a></p>
+<a href="renders/review/key_frames.jpg"><img src="renders/review/key_frames.jpg" alt="Eight review frames across the full cycle"></a>
+</section>
+</main>
+<script>
+const video=document.getElementById('motion'), scrub=document.getElementById('scrub'), position=document.getElementById('position');
+function show(){const frame=Math.min(144,Math.floor(video.currentTime*24)+1);scrub.value=frame;position.textContent=`Frame ${String(frame).padStart(3,'0')} / 144 · ${video.currentTime.toFixed(3)} s`;}
+function seek(frame){video.pause();video.currentTime=(Math.max(1,Math.min(144,frame))-1)/24+0.001;}
+document.getElementById('previous').onclick=()=>seek(Number(scrub.value)-1);
+document.getElementById('next').onclick=()=>seek(Number(scrub.value)+1);
+document.getElementById('restart').onclick=()=>seek(1);
+document.getElementById('repeat').onchange=e=>{video.loop=e.target.checked;};
+scrub.oninput=()=>seek(Number(scrub.value));video.ontimeupdate=show;video.onseeked=show;
+</script>
+</html>
