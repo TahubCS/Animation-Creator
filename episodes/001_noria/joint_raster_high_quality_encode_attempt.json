@@ -1,0 +1,22 @@
+{
+  "master_left": {
+    "maximum_consecutive_mean_rgb_change": 0.5847222222222223,
+    "mean_full_cycle_rgb_range": 1.5986882716049384,
+    "maximum_channel_range": 26
+  },
+  "master_right": {
+    "maximum_consecutive_mean_rgb_change": 0.7563271604938272,
+    "mean_full_cycle_rgb_range": 2.7748456790123455,
+    "maximum_channel_range": 30
+  },
+  "encoded_left": {
+    "maximum_consecutive_mean_rgb_change": 1.54375,
+    "mean_full_cycle_rgb_range": 4.451466049382716,
+    "maximum_channel_range": 26
+  },
+  "encoded_right": {
+    "maximum_consecutive_mean_rgb_change": 2.0588734567901237,
+    "mean_full_cycle_rgb_range": 5.882947530864198,
+    "maximum_channel_range": 32
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "sample_count": 289,
+  "sample_frames": "1..145 in 0.5-frame increments",
+  "continuous_collision_method": "Disjoint swept axial/vertical intervals; shaft bore and support radial bounds",
+  "max_rigid_transform_error": 8.344650268554688e-07,
+  "max_stationary_transform_error": 0,
+  "max_axis_translation_error_m": 0,
+  "max_angle_error_radians": 5.410814516437767e-07,
+  "rotor_swept_radius_m": 2.0517490918512937,
+  "rotor_axial_interval_m": [
+    -0.4720000624656677,
+    0.30000007152557373
+  ],
+  "rotor_ground_clearance_m": 0.29825081278127463,
+  "minimum_rotor_support_certified_clearance_m": 0.15825064827245505,
+  "minimum_shaft_bearing_certified_clearance_m": 0.014968375963101452,
+  "tube_body_bounding_sphere_clearance_m": 0.17931051377624807,
+  "minimum_saddle_to_cavity_plane_clearance_m": 0.018156996011733997,
+  "framing_uv_min": [
+    0.04601169750094414,
+    0.19820500910282135
+  ],
+  "framing_uv_max": [
+    0.9158967137336731,
+    0.7480412721633911
+  ],
+  "loop_endpoint_matches": true,
+  "direction": "right side rises, viewed from negative Y",
+  "support_clearances_m": {
+    "Bearing block -1 \u2022 bored": 0.3179998993873596,
+    "A-frame -1 leg -0.80": 0.3579998016357422,
+    "A-frame -1 leg +0.80": 0.3579998016357422,
+    "Bearing seat -1": 0.3679999113082886,
+    "A-frame sill -1": 0.35799992084503174,
+    "A-frame tie -1": 0.38799989223480225,
+    "Bearing block +1 \u2022 bored": 0.4899998903274536,
+    "A-frame +1 leg -0.80": 0.5299997925758362,
+    "A-frame +1 leg +0.80": 0.5299997925758362,
+    "Bearing seat +1": 0.5399999022483826,
+    "A-frame sill +1": 0.5299999117851257,
+    "A-frame tie +1": 0.5599998831748962,
+    "Base longitudinal brace -0.80": 0.15825064827245505,
+    "Base longitudinal brace +0.80": 0.15825064827245505
+  },
+  "shaft_clearances_m": {
+    "Bearing block -1 \u2022 bored": 0.014968375963101452,
+    "A-frame -1 leg -0.80": 0.0862528419494629,
+    "A-frame -1 leg +0.80": 0.0862528419494629,
+    "Bearing seat -1": 0.060000095367431644,
+    "A-frame sill -1": 2.0699999070167543,
+    "A-frame tie -1": 1.4699998831748962,
+    "Bearing block +1 \u2022 bored": 0.014968375963101452,
+    "A-frame +1 leg -0.80": 0.086253080368042,
+    "A-frame +1 leg +0.80": 0.086253080368042,
+    "Bearing seat +1": 0.060000095367431644,
+    "A-frame sill +1": 2.0699999070167543,
+    "A-frame tie +1": 1.4699998831748962,
+    "Base longitudinal brace -0.80": 2.237444691538673,
+    "Base longitudinal brace +0.80": 2.237444691538673
+  }
+}

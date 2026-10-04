@@ -1,0 +1,23 @@
+{
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "engine": "CYCLES",
+  "device": "OPTIX",
+  "gpu": [
+    "NVIDIA GeForce RTX 3060 Laptop GPU"
+  ],
+  "samples": 96,
+  "denoise": true,
+  "motion_blur": false,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "fps": 24,
+  "frames": 144,
+  "seconds": 6.0,
+  "tube_axis_outward_tilt_degrees": 25,
+  "tube_mounting": "rigid",
+  "physics_simulation": false,
+  "water": false
+}

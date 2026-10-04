@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "file": "draft.mp4",
+  "bytes": 1270234,
+  "tracks": [
+    {
+      "type": "vide",
+      "duration_seconds": 6.0,
+      "codec": "avc1",
+      "width": 540,
+      "height": 960,
+      "frame_count": 144,
+      "fps": 24
+    }
+  ],
+  "audio_tracks": 0,
+  "decoded_frames": 144,
+  "decoder": "Blender bundled FFmpeg, VSE movie strip",
+  "gui_playback": "not verified; no enabled computer/browser surfaces"
+}

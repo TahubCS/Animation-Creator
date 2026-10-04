@@ -1,0 +1,12 @@
+{
+  "left": {
+    "maximum_consecutive_mean_rgb_change": 5.3227623456790125,
+    "mean_full_cycle_rgb_range": 6.32199074074074,
+    "maximum_channel_range": 105
+  },
+  "right": {
+    "maximum_consecutive_mean_rgb_change": 5.492206790123457,
+    "mean_full_cycle_rgb_range": 7.515663580246913,
+    "maximum_channel_range": 107
+  }
+}
