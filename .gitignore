@@ -1,0 +1,17 @@
+# Python and Blender caches/backups; named scene archives remain tracked.
+__pycache__/
+*.py[cod]
+optix7cache.db*
+*.blend[0-9]*
+
+# Regenerable render/decoder sequences stay local. Keep reviewed previews,
+# representative full-resolution frames, and joint comparison sheets in Git.
+episodes/*/renders/frames/
+episodes/*/renders/decoded/
+episodes/*/renders/draft/
+episodes/*/renders/draft_sequence/
+episodes/*/renders/draft_decoded/
+episodes/*/renders/joint_review/encoded_full/
+episodes/*/renders/joint_review/corrected_test/
+episodes/*/renders/joint_review/before/*_[0-9][0-9][0-9][0-9].png
+episodes/*/renders/joint_review/after/*_[0-9][0-9][0-9][0-9].png
